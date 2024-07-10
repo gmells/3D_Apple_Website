@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { hightlightsSlides } from "../constants";
 import gsap from "gsap";
-import { pauseImg, playImg } from "../utils";
+import { pauseImg, playImg, replayImg } from "../utils";
 
 const VideoCarousel = () => {
   const videoRef = useRef([]);
@@ -100,6 +100,7 @@ const VideoCarousel = () => {
         <button className="control-btn">
           <img
             src={isLastVideo ? replayImg : !isPlaying ? playImg : pauseImg}
+            alt={isLastVideo ? "replay" }
           />
         </button>
       </div>
