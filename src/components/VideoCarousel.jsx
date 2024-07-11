@@ -43,6 +43,13 @@ const VideoCarousel = () => {
       });
     }
   }, [videoId, startPlay]);
+
+  const handleProcess = (type, i) = {
+    switch (type) {
+      
+    }
+  }
+
   return (
     <>
       <div className="flex items-center">
@@ -56,7 +63,7 @@ const VideoCarousel = () => {
                   preload="auto"
                   muted
                   ref={(el) => {
-                    video.current[i] = el;
+                    videoRef.current[i] = el;
                   }}
                   onPlay={() => {
                     setVideo((prevVideo) => ({
@@ -100,7 +107,8 @@ const VideoCarousel = () => {
         <button className="control-btn">
           <img
             src={isLastVideo ? replayImg : !isPlaying ? playImg : pauseImg}
-            alt={isLastVideo ? "replay" }
+            alt={isLastVideo ? "replay" : !isPlaying ? "play" : "pause"}
+            onClick={isLastVideo ? () => handleProcess("video-reset") ? !isPlaying ? () => handleProcess("play") : () => handleProcess("pause")}
           />
         </button>
       </div>
