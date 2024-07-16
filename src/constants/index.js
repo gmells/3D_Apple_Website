@@ -83,5 +83,5 @@ export const footerLinks = [
   "Terms of Use",
   "Sales Policy",
   "Legal",
-  "Site Map",
+  "Site",
 ];
