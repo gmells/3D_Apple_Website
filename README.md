@@ -21,7 +21,7 @@ https://github.com/user-attachments/assets/d19ab87c-a7ce-4cad-af7d-7b75a0c59f9f
 - Vite
 - Tailwind CSS
 
-## <a name="features">✨ Features</a>
+## <a name="features">📋 Features</a>
 
 👉 **Beautiful Subtle Smooth Animations using GSAP**: Enhanced user experience with seamless and captivating animations powered by GSAP.
 
